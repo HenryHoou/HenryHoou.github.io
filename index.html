@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hongye Hou's Homepage</title>
+<meta name="description" content="Hongye Hou - Ph.D. candidate at HKUST(GZ), AI4City Lab. Research on 3D generation, point cloud completion and 3D understanding.">
+<meta name="author" content="Hongye Hou">
+<style>
+  :root{
+    --accent:#c2410c;
+    --ink:#1f2937;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+    color:var(--ink);
+    line-height:1.7;
+    background:#fff;
+  }
+  .container{max-width:920px;margin:0 auto;padding:48px 24px 80px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* header */
+  .header{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap}
+  .header .photo{
+    width:200px;height:200px;object-fit:cover;border-radius:12px;
+    box-shadow:0 4px 18px rgba(0,0,0,.10);flex-shrink:0;
+  }
+  .header .intro{flex:1;min-width:280px}
+  h1{font-size:2rem;margin:0 0 4px;font-weight:700}
+  .affil{color:var(--muted);margin:0 0 14px;font-size:1rem}
+  .bio{margin:0 0 16px;text-align:justify}
+  .links{font-size:1rem}
+  .links a{margin-right:6px;font-weight:600}
+  .links span.sep{color:#d1d5db;margin-right:6px}
+
+  /* sections */
+  section{margin-top:44px}
+  h2{
+    font-size:1.35rem;font-weight:700;margin:0 0 14px;
+    padding-bottom:8px;border-bottom:2px solid var(--line);
+  }
+  .news li{margin-bottom:6px}
+  .news .date{font-weight:600;color:var(--accent);margin-right:8px}
+  ul{padding-left:20px}
+
+  /* publications */
+  .pub{margin-bottom:22px}
+  .pub .title{font-weight:600}
+  .pub .authors{font-size:.95rem}
+  .pub .authors b{font-weight:700}
+  .pub .venue{font-style:italic;color:var(--muted);font-size:.95rem}
+  .pub .venue .badge{
+    font-style:normal;font-size:.75rem;font-weight:600;color:#fff;
+    background:var(--accent);border-radius:4px;padding:1px 7px;margin-left:8px;
+    vertical-align:1px;
+  }
+  .pub .pub-links{font-size:.92rem;margin-top:2px}
+
+  /* internships */
+  .logo-row{
+    display:flex;gap:28px;align-items:center;flex-wrap:wrap;
+    margin:6px 0 22px;padding:18px 22px;
+    background:#fafafa;border:1px solid var(--line);border-radius:12px;
+  }
+  .logo-row a{display:flex;align-items:center}
+  .logo-row img{height:44px;width:auto;object-fit:contain;transition:transform .15s ease}
+  .logo-row a:hover img{transform:scale(1.06)}
+  .logo-row img.sq{height:52px;border-radius:10px}
+  .intern{margin-bottom:16px}
+  .intern .role{font-weight:600}
+  .intern .when{color:var(--muted);font-size:.92rem;float:right}
+  .intern .where{color:var(--muted)}
+  .intern p{margin:4px 0 0;font-size:.95rem}
+
+  /* education */
+  .edu{margin-bottom:14px}
+  .edu .school{font-weight:600}
+  .edu .when{color:var(--muted);font-size:.92rem;float:right}
+  .edu p{margin:2px 0 0;font-size:.95rem;color:#374151}
+
+  footer{
+    margin-top:56px;padding-top:16px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:.85rem;text-align:center;
+  }
+  @media (max-width:640px){
+    .header{gap:24px}
+    .header .photo{width:150px;height:150px}
+    .intern .when,.edu .when{float:none;display:block}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <img class="photo" src="assets/photo.png" alt="Hongye Hou">
+    <div class="intro">
+      <h1>Hongye Hou</h1>
+      <p class="affil">Ph.D. Candidate, <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>, HKUST(GZ) &middot; Guangzhou, China</p>
+      <p class="bio">
+        I am a Ph.D. candidate at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>,
+        in the <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>,
+        supervised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a> and
+        Prof. <a href="https://www.yingcong.me/" target="_blank">Ying-Cong Chen</a>.
+        Before that, I received my M.Eng. degree in Software Engineering at
+        <a href="https://www.xjtu.edu.cn/" target="_blank">Xi'an Jiaotong University</a>,
+        and my B.Eng. degree in Information Management and Systems at
+        <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>.
+        My research focuses on 3D Generation, Point Cloud Representation &amp; Completion, and 3D Understanding with AI Agents / VLMs.
+        I am always open to discussions and collaborations &mdash; feel free to contact me anytime!
+      </p>
+      <p class="links">
+        <a href="mailto:hhou201@connect.hkust-gz.edu.cn">Email</a><span class="sep">|</span>
+        <a href="https://scholar.google.com/citations?user=R1uS_QgAAAAJ" target="_blank">Google Scholar</a><span class="sep">|</span>
+        <a href="assets/cv.pdf" target="_blank">CV</a><span class="sep">|</span>
+        <a href="https://github.com/HenryHoou" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </div>
+
+  <section class="news">
+    <h2>News and Updates</h2>
+    <ul>
+      <li><span class="date">09/2026</span>CitySTAR pre-print is now online; accepted to NeurIPS 2026.</li>
+      <li><span class="date">08/2026</span>I started my Ph.D. journey at the AI4City Lab, HKUST(GZ).</li>
+      <li><span class="date">07/2026</span>One paper (retrieval-augmented point cloud completion) published in Applied Soft Computing.</li>
+      <li><span class="date">12/2024</span>I joined Alibaba Taotian (TaoBao Meta Technology Lab) as a 3D AIGC algorithm engineer intern.</li>
+      <li><span class="date">10/2024</span>One paper accepted to ACM Multimedia 2024.</li>
+      <li><span class="date">05/2024</span>Won 1st place in the Building3D Challenge at CVPR 2024 (team leader).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>First-Author Publications</h2>
+
+    <div class="pub">
+      <div class="title">CitySTAR: Structured and Topology-Aware Reasoning for Open-Vocabulary Urban 3D Grounding</div>
+      <div class="authors">Shuai Zhang*, <b>Hongye Hou*</b>, Qinghe Liu, Zhuoxiao Li, Dongli Wu, Yuan Liu, <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>&nbsp; (* equal contribution)</div>
+      <div class="venue">NeurIPS 2026<span class="badge">CCF-A</span></div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2609.19911" target="_blank">Paper</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Benefit from Reference: Retrieval-Augmented Cross-Modal Point Cloud Completion</div>
+      <div class="authors"><b>Hongye Hou</b>, Yang Yang, Zhan Liu, Fangyu Du</div>
+      <div class="venue">Applied Soft Computing, 2026<span class="badge">JCR Q1</span></div>
+      <div class="pub-links"><a href="https://arxiv.org/abs/2507.14485" target="_blank">Paper</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Dig into Detailed Structures: Key Context Encoding and Semantic-based Decoding for Point Cloud Completion</div>
+      <div class="authors"><b>Hongye Hou</b>, Xuehao Gao, Zhan Liu, Yang Yang</div>
+      <div class="venue">ACM International Conference on Multimedia (ACM MM), 2024<span class="badge">CCF-A</span></div>
+      <div class="pub-links"><a href="https://dl.acm.org/doi/abs/10.1145/3664647.3680565" target="_blank">Paper</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Bri3D: Bridging the Object&ndash;Scene Gap in Single-Image 3D Generation</div>
+      <div class="authors"><b>Hongye Hou</b>, et al.</div>
+      <div class="venue">Under review</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Internship Experience</h2>
+    <div class="logo-row">
+      <a href="https://www.mech-mind.com/" target="_blank" title="Mech-Mind Robotics"><img src="assets/mechmind.png" alt="Mech-Mind Robotics"></a>
+      <a href="https://www.huawei.com/" target="_blank" title="Huawei"><img src="assets/huawei.png" alt="Huawei"></a>
+      <a href="https://www.alibabagroup.com/" target="_blank" title="Alibaba Group"><img class="sq" src="assets/alibaba.png" alt="Alibaba Group"></a>
+      <a href="https://www.taotian.com/" target="_blank" title="Taotian Group"><img class="sq" src="assets/taotian.png" alt="Taotian Group"></a>
+    </div>
+
+    <div class="intern">
+      <span class="when">Dec. 2024 &ndash; Oct. 2025</span>
+      <span class="role">Alibaba &mdash; Taotian Group, TaoBao Meta Technology Lab</span><br>
+      <span class="where">3D AIGC Algorithm Engineer</span>
+      <p>Worked on compositional 3D generation: a two-stage generative scheme with mask-conditioned labelled-voxel generation and normal-map-guided high-resolution mesh generation; built a 3D mesh data synthesis &amp; quality-assessment pipeline; contributed to a multimodal-LLM fashion recommendation system.</p>
+    </div>
+
+    <div class="intern">
+      <span class="when">Jul. 2024 &ndash; Oct. 2024</span>
+      <span class="role">Huawei Technologies Co., Ltd.</span><br>
+      <span class="where">Code LLM Algorithm Engineer</span>
+      <p>Improved code-data quality via scoring-model-based classification, high-quality data synthesis and pre-training data cleaning; developed an automated evaluation pipeline for Code-LLMs; built adversarial prompt datasets for LLM safety testing.</p>
+    </div>
+
+    <div class="intern">
+      <span class="when">Nov. 2022 &ndash; Mar. 2023</span>
+      <span class="role">Mech-Mind Robotics (Beijing)</span><br>
+      <span class="where">Machine Vision Algorithm Engineer</span>
+      <p>Improved point-cloud clustering for robotic object grasping with region-growing techniques for more accurate and efficient segmentation.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <span class="when">Aug. 2026 &ndash; Now</span>
+      <span class="school">The Hong Kong University of Science and Technology (Guangzhou)</span>
+      <p>Ph.D. candidate, <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a></p>
+    </div>
+    <div class="edu">
+      <span class="when">Sep. 2023 &ndash; Jun. 2026</span>
+      <span class="school">Xi'an Jiaotong University</span>
+      <p>M.Eng. in Software Engineering &middot; GPA 3.64/4, top 5%, XJTU Scholarship</p>
+    </div>
+    <div class="edu">
+      <span class="when">Sep. 2019 &ndash; Jun. 2023</span>
+      <span class="school">Northeastern University</span>
+      <p>B.Eng. in Information Management and Systems &middot; GPA 3.92/5, top 5%</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards &amp; Services</h2>
+    <ul>
+      <li>1st Place (Team Leader), Building3D Challenge, CVPR 2024.</li>
+      <li>Honor Award, International Mathematical Contest in Modeling (MCM).</li>
+      <li>XJTU Scholarship; university-level honors ("Outstanding Student Cadre").</li>
+    </ul>
+  </section>
+
+  <footer>
+    Hongye Hou &middot; hhou201@connect.hkust-gz.edu.cn &middot; Last update: Oct 2026
+  </footer>
+
+</div>
+</body>
+</html>
