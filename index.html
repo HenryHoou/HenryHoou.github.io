@@ -27,17 +27,18 @@
 
   /* header */
   .header{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap}
+  .header .left{flex-shrink:0;width:200px}
   .header .photo{
     width:200px;height:200px;object-fit:cover;border-radius:12px;
-    box-shadow:0 4px 18px rgba(0,0,0,.10);flex-shrink:0;
+    box-shadow:0 4px 18px rgba(0,0,0,.10);display:block;
   }
   .header .intro{flex:1;min-width:280px}
   h1{font-size:2rem;margin:0 0 4px;font-weight:700}
   .affil{color:var(--muted);margin:0 0 14px;font-size:1rem}
-  .bio{margin:0 0 16px;text-align:justify}
-  .links{font-size:1rem}
-  .links a{margin-right:6px;font-weight:600}
-  .links span.sep{color:#d1d5db;margin-right:6px}
+  .bio{margin:0;text-align:justify}
+  .links{font-size:.98rem;margin:14px 0 0;text-align:center;white-space:nowrap}
+  .links a{font-weight:600}
+  .links span.sep{color:#d1d5db;margin:0 6px}
 
   /* sections */
   section{margin-top:44px}
@@ -90,6 +91,7 @@
   }
   @media (max-width:640px){
     .header{gap:24px}
+    .header .left{width:150px}
     .header .photo{width:150px;height:150px}
     .intern .when,.edu .when{float:none;display:block}
   }
@@ -99,7 +101,14 @@
 <div class="container">
 
   <div class="header">
-    <img class="photo" src="assets/photo.jpg" alt="Hongye Hou">
+    <div class="left">
+      <img class="photo" src="assets/photo.jpg" alt="Hongye Hou">
+      <p class="links">
+        <a href="mailto:hhou201@connect.hkust-gz.edu.cn">Email</a><span class="sep">|</span>
+        <a href="https://scholar.google.com/citations?user=R1uS_QgAAAAJ" target="_blank">Google Scholar</a><span class="sep">|</span>
+        <a href="assets/cv.pdf" target="_blank">CV</a>
+      </p>
+    </div>
     <div class="intro">
       <h1>Hongye Hou</h1>
       <p class="affil">Ph.D. Candidate, <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>, HKUST(GZ) &middot; Guangzhou, China</p>
@@ -114,12 +123,6 @@
         <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>.
         My research focuses on 3D Generation, Point Cloud Representation &amp; Completion, and 3D Understanding with AI Agents / VLMs.
         I am always open to discussions and collaborations &mdash; feel free to contact me anytime!
-      </p>
-      <p class="links">
-        <a href="mailto:hhou201@connect.hkust-gz.edu.cn">Email</a><span class="sep">|</span>
-        <a href="https://scholar.google.com/citations?user=R1uS_QgAAAAJ" target="_blank">Google Scholar</a><span class="sep">|</span>
-        <a href="assets/cv.pdf" target="_blank">CV</a><span class="sep">|</span>
-        <a href="https://github.com/HenryHoou" target="_blank">GitHub</a>
       </p>
     </div>
   </div>
