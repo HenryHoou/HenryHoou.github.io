@@ -50,7 +50,12 @@
   ul{padding-left:20px}
 
   /* publications */
-  .pub{margin-bottom:22px}
+  .pub{margin-bottom:22px;display:flex;gap:18px;align-items:flex-start}
+  .pub .pub-body{flex:1;min-width:0}
+  .pub img.teaser{
+    width:230px;max-width:32%;border:1px solid var(--line);border-radius:8px;
+    flex-shrink:0;background:#fff;
+  }
   .pub .title{font-weight:600}
   .pub .authors{font-size:.95rem}
   .pub .authors b{font-weight:700}
@@ -139,30 +144,40 @@
     <h2>First-Author Publications</h2>
 
     <div class="pub">
-      <div class="title">CitySTAR: Structured and Topology-Aware Reasoning for Open-Vocabulary Urban 3D Grounding</div>
-      <div class="authors">Shuai Zhang*, <b>Hongye Hou*</b>, Qinghe Liu, Zhuoxiao Li, Dongli Wu, Yuan Liu, <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>&nbsp; (* equal contribution)</div>
-      <div class="venue"><b>NeurIPS 2026</b><span class="badge">CCF-A</span></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2609.19911" target="_blank">Paper</a></div>
+      <img class="teaser" src="assets/teaser_citystar.png" alt="CitySTAR teaser">
+      <div class="pub-body">
+        <div class="title">CitySTAR: Structured and Topology-Aware Reasoning for Open-Vocabulary Urban 3D Grounding</div>
+        <div class="authors">Shuai Zhang*, <b>Hongye Hou*</b>, Qinghe Liu, Zhuoxiao Li, Dongli Wu, Yuan Liu, <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>&nbsp; (* equal contribution)</div>
+        <div class="venue"><b>NeurIPS 2026</b><span class="badge">CCF-A</span></div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2609.19911" target="_blank">Paper</a></div>
+      </div>
     </div>
 
     <div class="pub">
-      <div class="title">Benefit from Reference: Retrieval-Augmented Cross-Modal Point Cloud Completion</div>
-      <div class="authors"><b>Hongye Hou</b>, Yang Yang, Zhan Liu, Fangyu Du</div>
-      <div class="venue">Applied Soft Computing, 2026<span class="badge">JCR Q1</span></div>
-      <div class="pub-links"><a href="https://arxiv.org/abs/2507.14485" target="_blank">Paper</a></div>
+      <img class="teaser" src="assets/teaser_rasc.png" alt="Benefit from Reference teaser">
+      <div class="pub-body">
+        <div class="title">Benefit from Reference: Retrieval-Augmented Cross-Modal Point Cloud Completion</div>
+        <div class="authors"><b>Hongye Hou</b>, Yang Yang, Zhan Liu, Fangyu Du</div>
+        <div class="venue">Applied Soft Computing, 2026<span class="badge">JCR Q1</span></div>
+        <div class="pub-links"><a href="https://arxiv.org/abs/2507.14485" target="_blank">Paper</a></div>
+      </div>
     </div>
 
     <div class="pub">
-      <div class="title">Dig into Detailed Structures: Key Context Encoding and Semantic-based Decoding for Point Cloud Completion</div>
-      <div class="authors"><b>Hongye Hou</b>, Xuehao Gao, Zhan Liu, Yang Yang</div>
-      <div class="venue"><b>ACM International Conference on Multimedia (ACM MM), 2024</b><span class="badge">CCF-A</span></div>
-      <div class="pub-links"><a href="https://dl.acm.org/doi/abs/10.1145/3664647.3680565" target="_blank">Paper</a></div>
+      <div class="pub-body">
+        <div class="title">Dig into Detailed Structures: Key Context Encoding and Semantic-based Decoding for Point Cloud Completion</div>
+        <div class="authors"><b>Hongye Hou</b>, Xuehao Gao, Zhan Liu, Yang Yang</div>
+        <div class="venue"><b>ACM International Conference on Multimedia (ACM MM), 2024</b><span class="badge">CCF-A</span></div>
+        <div class="pub-links"><a href="https://dl.acm.org/doi/abs/10.1145/3664647.3680565" target="_blank">Paper</a></div>
+      </div>
     </div>
 
     <div class="pub">
-      <div class="title">Bri3D: Bridging the Object&ndash;Scene Gap in Single-Image 3D Generation</div>
-      <div class="authors"><b>Hongye Hou</b>, et al.</div>
-      <div class="venue">Under review</div>
+      <div class="pub-body">
+        <div class="title">Bri3D: Bridging the Object&ndash;Scene Gap in Single-Image 3D Generation</div>
+        <div class="authors"><b>Hongye Hou</b>, et al.</div>
+        <div class="venue">Under review</div>
+      </div>
     </div>
   </section>
 
