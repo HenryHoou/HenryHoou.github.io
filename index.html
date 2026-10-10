@@ -27,17 +27,19 @@
 
   /* header */
   .header{display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap}
+  .header .left{flex-shrink:0;width:200px}
   .header .photo{
     width:200px;height:200px;object-fit:cover;border-radius:12px;
-    box-shadow:0 4px 18px rgba(0,0,0,.10);flex-shrink:0;
+    box-shadow:0 4px 18px rgba(0,0,0,.10);display:block;
   }
   .header .intro{flex:1;min-width:280px}
   h1{font-size:2rem;margin:0 0 4px;font-weight:700}
+  h1 .zh{font-size:1.3rem;color:var(--muted);font-weight:600;margin-left:10px}
   .affil{color:var(--muted);margin:0 0 14px;font-size:1rem}
-  .bio{margin:0 0 16px;text-align:justify}
-  .links{font-size:1rem}
-  .links a{margin-right:6px;font-weight:600}
-  .links span.sep{color:#d1d5db;margin-right:6px}
+  .bio{margin:0;text-align:justify}
+  .links{font-size:.98rem;margin:14px 0 0;text-align:center;white-space:nowrap}
+  .links a{font-weight:600}
+  .links span.sep{color:#d1d5db;margin:0 6px}
 
   /* sections */
   section{margin-top:44px}
@@ -95,6 +97,7 @@
   }
   @media (max-width:640px){
     .header{gap:24px}
+    .header .left{width:150px}
     .header .photo{width:150px;height:150px}
     .intern .when,.edu .when{float:none;display:block}
   }
@@ -104,12 +107,19 @@
 <div class="container">
 
   <div class="header">
-    <img class="photo" src="assets/photo.jpg" alt="Hongye Hou">
+    <div class="left">
+      <img class="photo" src="assets/photo.jpg" alt="Hongye Hou">
+      <p class="links">
+        <a href="mailto:hhou201@connect.hkust-gz.edu.cn">Email</a><span class="sep">|</span>
+        <a href="https://scholar.google.com/citations?user=R1uS_QgAAAAJ" target="_blank">Google Scholar</a><span class="sep">|</span>
+        <a href="assets/cv.pdf" target="_blank">CV</a>
+      </p>
+    </div>
     <div class="intro">
-      <h1>Hongye Hou</h1>
-      <p class="affil">Ph.D. Candidate, <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>, HKUST(GZ) &middot; Guangzhou, China</p>
+      <h1>Hongye Hou<span class="zh">侯鸿业</span></h1>
+      <p class="affil">1st year PhD Student, <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>, HKUST(GZ) &middot; Guangzhou, China</p>
       <p class="bio">
-        I am a Ph.D. candidate at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>,
+        I am a 1st year PhD student at <a href="https://www.hkust-gz.edu.cn/" target="_blank">The Hong Kong University of Science and Technology (Guangzhou)</a>,
         in the <a href="http://www.ai4dcity.com/" target="_blank">AI 4D City (AI4City) Lab</a>,
         supervised by Prof. <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>.
 
@@ -120,18 +130,13 @@
         <a href="https://www.neu.edu.cn/" target="_blank">Northeastern University</a>.
         I am always open to discussions and collaborations &mdash; feel free to contact me anytime!
       </p>
-      <p class="links">
-        <a href="mailto:hhou201@connect.hkust-gz.edu.cn">Email</a><span class="sep">|</span>
-        <a href="https://scholar.google.com/citations?user=R1uS_QgAAAAJ" target="_blank">Google Scholar</a><span class="sep">|</span>
-        <a href="assets/cv.pdf" target="_blank">CV</a><span class="sep">|</span>
-        <a href="https://github.com/HenryHoou" target="_blank">GitHub</a>
-      </p>
     </div>
   </div>
 
   <section class="news">
     <h2>News and Updates</h2>
     <ul>
+      <li><span class="date">10/2026</span>We won the champion of the <a href="https://huggingface.co/spaces/BuildingWorld/10thLiDARConference" target="_blank">10th China LiDAR Competition</a>.</li>
       <li><span class="date">09/2026</span>CitySTAR accepted to <b>NeurIPS 2026</b>.</li>
       <li><span class="date">08/2026</span>I started my Ph.D. journey at the AI4City Lab, HKUST(GZ).</li>
       <li><span class="date">12/2024</span>I joined Alibaba Taotian (TaoBao Meta Technology Lab) as a 3D AIGC algorithm engineer intern.</li>
@@ -147,7 +152,7 @@
       <img class="teaser" src="assets/teaser_citystar.png" alt="CitySTAR teaser">
       <div class="pub-body">
         <div class="title">CitySTAR: Structured and Topology-Aware Reasoning for Open-Vocabulary Urban 3D Grounding</div>
-        <div class="authors">Shuai Zhang*, <b>Hongye Hou*</b>, Qinghe Liu, Zhuoxiao Li, Dongli Wu, Yuan Liu, <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>&nbsp; (* equal contribution)</div>
+        <div class="authors">Shuai Zhang*, <b>Hongye Hou*</b>, Qinghe Liu, Zhuoxiao Li, Dongli Wu, <a href="https://liuyuan-pal.github.io/" target="_blank">Yuan Liu</a>, <a href="https://scholar.google.com/citations?hl=en&user=SE267o4AAAAJ" target="_blank">Wufan Zhao</a>&nbsp; (* equal contribution)</div>
         <div class="venue"><b>NeurIPS 2026</b><span class="badge">CCF-A</span></div>
         <div class="pub-links"><a href="https://arxiv.org/abs/2609.19911" target="_blank">Paper</a></div>
       </div>
